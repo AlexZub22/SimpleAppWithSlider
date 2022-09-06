@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0346A4E428BE32C800137C81 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0346A4E328BE32C800137C81 /* Game.swift */; };
+		0346A4E728C6083600137C81 /* GameRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0346A4E628C6083600137C81 /* GameRound.swift */; };
+		0346A4E928C6084A00137C81 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0346A4E828C6084A00137C81 /* Generator.swift */; };
+		03C2038628BE1B7200397104 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2038528BE1B7200397104 /* SecondViewController.swift */; };
 		03E070D528B4FF7C004B2D07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E070D428B4FF7C004B2D07 /* AppDelegate.swift */; };
 		03E070D728B4FF7C004B2D07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E070D628B4FF7C004B2D07 /* SceneDelegate.swift */; };
 		03E070D928B4FF7C004B2D07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E070D828B4FF7C004B2D07 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0346A4E328BE32C800137C81 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		0346A4E628C6083600137C81 /* GameRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRound.swift; sourceTree = "<group>"; };
+		0346A4E828C6084A00137C81 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
+		03C2038528BE1B7200397104 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		03E070D128B4FF7C004B2D07 /* RightOnTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RightOnTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E070D428B4FF7C004B2D07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03E070D628B4FF7C004B2D07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0346A4E228BE327A00137C81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0346A4E328BE32C800137C81 /* Game.swift */,
+				0346A4E828C6084A00137C81 /* Generator.swift */,
+				0346A4E628C6083600137C81 /* GameRound.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		03E070C828B4FF7C004B2D07 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +74,11 @@
 		03E070D328B4FF7C004B2D07 /* RightOnTarget */ = {
 			isa = PBXGroup;
 			children = (
+				0346A4E228BE327A00137C81 /* Model */,
+				03E070D828B4FF7C004B2D07 /* ViewController.swift */,
 				03E070D428B4FF7C004B2D07 /* AppDelegate.swift */,
 				03E070D628B4FF7C004B2D07 /* SceneDelegate.swift */,
-				03E070D828B4FF7C004B2D07 /* ViewController.swift */,
+				03C2038528BE1B7200397104 /* SecondViewController.swift */,
 				03E070DA28B4FF7C004B2D07 /* Main.storyboard */,
 				03E070DD28B4FF80004B2D07 /* Assets.xcassets */,
 				03E070DF28B4FF80004B2D07 /* LaunchScreen.storyboard */,
@@ -138,8 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C2038628BE1B7200397104 /* SecondViewController.swift in Sources */,
+				0346A4E428BE32C800137C81 /* Game.swift in Sources */,
 				03E070D928B4FF7C004B2D07 /* ViewController.swift in Sources */,
 				03E070D528B4FF7C004B2D07 /* AppDelegate.swift in Sources */,
+				0346A4E928C6084A00137C81 /* Generator.swift in Sources */,
+				0346A4E728C6083600137C81 /* GameRound.swift in Sources */,
 				03E070D728B4FF7C004B2D07 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +324,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = IP.RightOnTarget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -329,7 +353,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = IP.RightOnTarget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
